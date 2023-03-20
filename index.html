@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0320 vending</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/a11y-hidden.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title a11y-hidden">Cola Cola</h1>
+      <a href="index.html" class="titleLogoLink"
+        ><img src="./img/logo.png" alt="ColaCola" class="titleLogo"
+      /></a>
+    </header>
+    <section class="wrapper wrapperFlex">
+      <section class="left">
+        <h2 class="a11y-hidden">아이템 선택</h2>
+        <article class="menu">
+          <h3 class="a11y-hidden">메뉴</h3>
+          <div class="itemGridWrapper">
+            <button class="item original-cola" type="button">
+              <img src="./img/original-cola.png" alt="original-cola" />
+              <span class="itemName">original_Cola</span>
+              <span class="itemPrice">1000원</span>
+            </button>
+            <button class="item violet-cola" type="button">
+              <img src="./img/violet-cola.png" alt="violet-cola" />
+              <span class="itemName">soldout_Cola</span>
+              <span class="itemPrice">1000원</span>
+            </button>
+            <button class="item yellow-cola" type="button">
+              <img src="./img/yellow-cola.png" alt="yellow-cola" />
+              <span class="itemName">Yellow_Cola</span>
+              <span class="itemPrice">1000원</span>
+            </button>
+            <button class="item cool-cola" type="button">
+              <img src="./img/cool-cola.png" alt="cool-cola" />
+              <span class="itemName">Cool_Cola</span>
+              <span class="itemPrice">1000원</span>
+            </button>
+            <button class="item green-cola" type="button">
+              <img src="./img/green-cola.png" alt="green-cola" />
+              <span class="itemName">Green_Cola</span>
+              <span class="itemPrice">1000원</span>
+            </button>
+            <button class="item orange-cola" type="button">
+              <img src="./img/orange-cola.png" alt="orange-cola" />
+              <span class="itemName">Orange_Cola</span>
+              <span class="itemPrice">1000원</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="moneyInfo">
+          <h3 class="a11y-hidden">거스름돈/입금</h3>
+          <div class="moneyGridWrapper">
+            <div class="moneyBox moneyGridSet12">
+              <p>잔액 :</p>
+              <p class="moneyVariable">1,000원</p>
+            </div>
+
+            <form class="moneyGridSet3">
+              <input
+                class="exchangeButton buttonWhite"
+                type="submit"
+                value="거스름돈 반환"
+              />
+            </form>
+          </div>
+
+          <div class="moneyIn">
+            <form class="moneyGridWrapper">
+              <label for="money-in" class="a11y-hidden">입금액 입력</label>
+              <input
+                type="text"
+                id="money-in"
+                placeholder="입금액 입력"
+                class="moneyText inputBoxWhite moneyGridSet12"
+              />
+              <input
+                type="submit"
+                value="입금"
+                class="moneyButton buttonWhite moneyGridSet3"
+              />
+            </form>
+          </div>
+        </article>
+
+        <article class="basket">
+          <h3 class="a11y-hidden">장바구니</h3>
+          <div class="basketWrapper">
+            <div class="basketListHeight listWrapperStyle basketGridSet12">
+              <article class="basketListWrapper">
+                <ul class="basketList">
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">999</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">2</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">3</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">999</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <form class="listGetForm basketGridSet3">
+              <input type="button" value="획득" class="listGetButton" />
+            </form>
+          </div>
+        </article>
+      </section>
+
+      <section class="right">
+        <section class="rightTop">
+          <h2 class="a11y-hidden">소지금</h2>
+          <article class="moneyBox">
+            <p>소지금 :</p>
+            <p>25,000원</p>
+          </article>
+        </section>
+        <section class="rightBottom">
+          <h2 class="rightTitle">획득한 음료</h2>
+          <article class="orderList">
+            <div class="orderListHeight listWrapperStyle">
+              <article class="basketListWrapper">
+                <ul class="basketList">
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">999</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">999</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">999</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">999</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">999</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">999</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listStyle">
+                      <img src="./img/original-cola.png" alt="original-cola" />
+                      <p class="listName">original-cola</p>
+                      <p class="listCount boxWhite">999</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </article>
+
+          <article class="total">
+            <p>총 금액 :</p>
+            <p class="orderVariable">9,000원</p>
+          </article>
+        </section>
+      </section>
+    </section>
+    <footer></footer>
+  </body>
+</html>
